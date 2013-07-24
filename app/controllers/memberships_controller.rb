@@ -10,6 +10,7 @@ class MembershipsController < ApplicationController
   # GET /memberships/1
   # GET /memberships/1.json
   def show
+    @membership = Memberships.find(params[:id])
   end
 
   # GET /memberships/new
